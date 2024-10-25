@@ -1,46 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Section from "../components/Section.astro";
-import Modal from "../components/Modal.astro";
 import Navbar from "../components/NavBar";
-import { useState } from "react";
 // const [isModalOpen, setIsModalOpen] = useState(false);
 // const [modalContent, setModalContent] = useState({ title: "", content: "" });
 
-const cards = [
-	{
-		title: "Tarjeta 1",
-		description: "Descripción detallada de la tarjeta 1.",
-		imageUrl: "https://via.placeholder.com/400",
-	},
-	{
-		title: "Tarjeta 2",
-		description: "Descripción detallada de la tarjeta 2.",
-		imageUrl: "https://via.placeholder.com/400",
-	},
-	{
-		title: "Tarjeta 3",
-		description: "Descripción detallada de la tarjeta 3.",
-		imageUrl: "https://via.placeholder.com/400",
-	},
-];
-
-const gymName = "Gimnasio Fitness Pro";
-// const description =
-// 	"Transforma tu cuerpo y mente en nuestro gimnasio. ¡Inscríbete hoy!";
-const features = [
-	"Equipos de última tecnología",
-	"Clases de spinning y yoga",
-	"Entrenadores personales",
-	"Horarios flexibles",
-];
-const navbarItems = [
-	{ name: "Inicio", href: "/" },
-	{ name: "Servicios", href: "#features" },
-	{ name: "Acerca de", href: "#about" },
-	{ name: "Contacto", href: "#contact" },
-];
 const title = "Bienvenido a Ares Gym";
 const description =
 	"Transforma tu cuerpo y mente en nuestro gimnasio. ¡Inscríbete hoy!";

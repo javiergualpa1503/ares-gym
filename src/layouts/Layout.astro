@@ -12,7 +12,11 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="https://scontent.fuio10-2.fna.fbcdn.net/v/t39.30808-1/393775172_633675825547021_2531836185612704497_n.jpg?stp=dst-jpg_s200x200&_nc_cat=105&ccb=1-7&_nc_sid=f4b9fd&_nc_eui2=AeG7JN76xYGYY-UAcGijnxxTLSJUj24X5lUtIlSPbhfmVZQdohUKbvMyp5AJ1mktN9pgo_zmyW3-lgU3zqP9aelt&_nc_ohc=Q-WosmeTt1EQ7kNvgGvXNDj&_nc_zt=24&_nc_ht=scontent.fuio10-2.fna&_nc_gid=AUh_dlum3Ae93MlBzzG5CJf&oh=00_AYCPFZpfZn0eMMNIYR5aBF88yzlSdpV5mDb-K9fw5bJnig&oe=671A5BED"
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -21,20 +25,8 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+		font-family: sans-serif;
 	}
 	code {
 		font-family:

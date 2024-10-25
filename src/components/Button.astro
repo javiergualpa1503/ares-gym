@@ -1,0 +1,23 @@
+---
+export interface ButtonProps {
+  label: string;
+  type?: "button" | "submit" | "reset";
+  variant?: "primary" | "secondary";
+  onClick?: () => void;
+}
+
+const { label, type = "button", variant = "primary", onclick } = Astro.props;
+
+const buttonStyles =
+  variant === "primary"
+    ? "bg-blue-500 text-white hover:bg-blue-600"
+    : "bg-gray-500 text-white hover:bg-gray-600";
+---
+
+<button
+  type={type}
+  onclick={onclick}
+  class={`px-4 py-2 rounded-lg font-semibold transition-colors duration-300 ${buttonStyles}`}
+>
+  {label}
+</button>

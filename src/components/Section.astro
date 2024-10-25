@@ -1,0 +1,23 @@
+---
+const { title, subtitle, url } = Astro.props;
+---
+
+<section>
+  <h2>{title}</h2>
+  <h4>{subtitle}</h4>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum consectetur
+    laboriosam minima ipsa quas, repudiandae perspiciatis. Optio perferendis
+    quia maiores esse mollitia, a dolor beatae dicta cum adipisci error
+    officiis!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque possimus
+    perspiciatis similique corrupti dolore magnam nobis facilis dolorum vitae
+    expedita maiores blanditiis, laudantium doloribus accusamus magni illum
+    animi odio?
+  </p>
+  <figure>
+    <img src={url} alt="" />
+  </figure>
+</section>
